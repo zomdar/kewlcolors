@@ -10,7 +10,7 @@ const navigation = [
   { name: "Color Palettes", href: "/color-palettes", current: false },
   {
     name: "Color Gradients",
-    href: "/home",
+    href: "/color-gradients",
     current: true,
   },
   { name: "Font Pairings", href: "/font-pairings", current: false },
@@ -67,7 +67,7 @@ const NavBar = () => {
               </div>
             </div>
 
-            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10 border-pink-500">
+            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10 border-b-2 border-t-2 border-purple-500 border-opacity-50">
               <div className="hidden md:flex items-center justify-start md:flex-1 lg:w-0">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
@@ -84,6 +84,11 @@ const NavBar = () => {
                       </Link>
                     </div>
                   ))}
+                </div>
+                <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                  <div className="flex space-x-4">
+                    <p>v 1.0</p>
+                  </div>
                 </div>
               </div>
             </div>
