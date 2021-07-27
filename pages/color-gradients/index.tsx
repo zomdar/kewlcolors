@@ -94,7 +94,7 @@ export default function Landing() {
         <title>Kewl Colors</title>
         <meta
           name="description"
-          content="Kewl Colors for your next project"
+          content="Kewl Colors for your next project!"
         />
       </Head>
       <div className="mx-auto pt-6 flex flex-col px-3 bg-gradient-to-r from-black to-purple-500 text-white">
