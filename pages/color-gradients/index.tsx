@@ -128,7 +128,7 @@ export default function Landing() {
               .map((filteredGradient: GradientLayout) => (
                 <Gradient
                   gradient={filteredGradient}
-                  key={filteredGradient.startColor}
+                  key={filteredGradient.startColorClass}
                 ></Gradient>
               ))}
           </div>
