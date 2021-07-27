@@ -1,4 +1,3 @@
-import Link from "next/link";
 import * as React from "react";
 import NavBar from "../components/common/NavBar";
 import Head from "next/head";
