@@ -6,10 +6,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { WifiIcon, CheckCircleIcon } from "@heroicons/react/solid";
 
 const navigation = [
-  { name: "Color System", href: "/color-system", current: false },
-  { name: "Color Palettes", href: "/color-palettes", current: false },
+  { name: "System", href: "/color-system", current: false },
+  { name: "Palettes", href: "/color-palettes", current: false },
   {
-    name: "Color Gradients",
+    name: "Gradients",
     href: "/color-gradients",
     current: true,
   },
@@ -28,7 +28,6 @@ const NavBar = () => {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href={navigation[0].href}>
                   <span className="sr-only">kewl colors</span>
-                  {/* <h1 className="font-bold text-base md:text-lg">KewColors</h1> */}
                   <img src="/logo.png" alt="" />
                 </a>
               </div>
@@ -42,7 +41,7 @@ const NavBar = () => {
                 <div className="flex space-x-4">
                   <a
                     target="_blank"
-                    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.zomdar.com%2F&text=Colors%2C%20Fonts%2C%20Palettes%20and%20typography%20for%20Web%20Developers%20and%20Designers.%20By%20%40zomdar"
+                    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkewlcolors.vercel.app%2F&text=Colors%2C%20Fonts%2C%20Palettes%20and%20typography%20for%20Web%20Developers%20and%20Designers.%20By%20%40zomdar"
                   >
                     <div className="flex flex-row pl-4">
                       <svg

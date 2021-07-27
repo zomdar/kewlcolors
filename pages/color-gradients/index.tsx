@@ -8,7 +8,7 @@ const someGradients: GradientLayout[] = [
   {
     type: "Cold Gradient",
     level: "001",
-    startColor: "##F9A8D4",
+    startColor: "#F9A8D4",
     endColor: "#A78BFA",
     startColorClass:
       "py-8 px-24 rounded bg-gradient-to-r from-pink-300 to-purple-400 hover:from-pink-400 hover:to-purple-400 lg:px-48",
@@ -32,23 +32,23 @@ const someGradients: GradientLayout[] = [
   {
     type: "Cold Gradient",
     level: "004",
-    startColor: "#EC4895",
-    endColor: "#F59B0D",
+    startColor: "#FCE7F3",
+    endColor: "#93C5FD",
     startColorClass:
       "py-8 px-24 rounded bg-gradient-to-r from-pink-100 to-blue-300 hover:from-pink-200 hover:to-blue-400 lg:px-48",
   },
   {
     type: "Cold Gradient",
     level: "005",
-    startColor: "#EC4895",
-    endColor: "#F59B0D",
+    startColor: "#10B981",
+    endColor: "#047857",
     startColorClass:
       "py-8 px-24 rounded bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 lg:px-48",
   },
   {
     type: "Warm Gradient",
     level: "001",
-    startColor: "##EC4895",
+    startColor: "#EC4895",
     endColor: "#F59B0D",
     startColorClass:
       "py-8 px-24 rounded bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 lg:px-48",
@@ -64,15 +64,15 @@ const someGradients: GradientLayout[] = [
   {
     type: "Warm Gradient",
     level: "003",
-    startColor: "#EC4895",
-    endColor: "#F59B0D",
+    startColor: "#FEF3C7",
+    endColor: "#60A5FA",
     startColorClass:
       "py-8 px-24 rounded bg-gradient-to-r from-yellow-100 to-blue-400 hover:from-yellow-200 hover:to-blue-500 lg:px-48",
   },
   {
     type: "Warm Gradient",
     level: "004",
-    startColor: "#EC4895",
+    startColor: "#EDE9FE",
     endColor: "#A78BFA",
     startColorClass:
       "py-8 px-24 rounded bg-gradient-to-r from-purple-100 to-purple-400 hover:from-purple-200 hover:to-purple-500 lg:px-48",
@@ -80,8 +80,8 @@ const someGradients: GradientLayout[] = [
   {
     type: "Warm Gradient",
     level: "005",
-    startColor: "#EC4895",
-    endColor: "#F59B0D",
+    startColor: "#FEE2E2",
+    endColor: "#F87171",
     startColorClass:
       "py-8 px-24 rounded bg-gradient-to-r from-red-100 to-red-400 hover:from-red-200 hover:to-red-500 lg:px-48",
   },
