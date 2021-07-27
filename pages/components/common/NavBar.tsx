@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { WifiIcon } from "@heroicons/react/solid";
+import { WifiIcon, CheckCircleIcon } from "@heroicons/react/solid";
 
 const navigation = [
   { name: "Color System", href: "/color-system", current: false },
@@ -32,14 +32,14 @@ const NavBar = () => {
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Popover.Button className="bg-white bg-opacity-75 rounded-md p-2 inline-flex items-center justify-center text-gray-500 hover:text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <div className="flex space-x-4">
-                  <Link href="https://zomdar.com">
+                  <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.zomdar.com%2F&text=Colors%2C%20Fonts%2C%20Palettes%20and%20typography%20for%20Web%20Developers%20and%20Designers.%20By%20%40zomdar">
                     <div className="flex flex-row pl-4">
                       <svg
                         width="20"
@@ -53,16 +53,16 @@ const NavBar = () => {
                         Share on Twitter
                       </a>
                     </div>
-                  </Link>
-                  <Link href="https://zomdar.com">
+                  </a>
+                  <a target="_blank" href="https://zomdar.com">
                     <div className="flex flex-row pl-4">
-                      <WifiIcon className="h-5 w-5 text-gray-500" />
+                      <CheckCircleIcon className="h-5 w-5 text-gray-400 bg-opacity-50" />
 
                       <a className="pl-2 hover:text-purple-900 focused:text-purple-900">
                         Made by Wooj
                       </a>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

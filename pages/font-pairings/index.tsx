@@ -9,10 +9,7 @@ export default function Landing() {
     <>
       <Head>
         <title>Font Pairings</title>
-        <meta
-          name="description"
-          content="Font Pairings"
-        />
+        <meta name="description" content="Font Pairings" />
       </Head>
       <div className="mx-auto pt-6 flex flex-col px-3 bg-gradient-to-r from-black to-purple-500 text-white">
         <NavBar />
@@ -37,11 +34,7 @@ export default function Landing() {
         </div>
       </div>
       <div className="container mx-auto px-4 pt-16">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora harum
-          in esse laborum voluptate totam eaque qui adipisci fugiat, nostrum
-          commodi eum nihil odit, quos quibusdam. Culpa facilis nobis ad?
-        </p>
+        <p className="text-xl">Coming Soon!</p>
       </div>
     </>
   );

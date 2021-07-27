@@ -37,10 +37,8 @@ export default function Landing() {
         </div>
       </div>
       <div className="container mx-auto px-4 pt-16">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora harum
-          in esse laborum voluptate totam eaque qui adipisci fugiat, nostrum
-          commodi eum nihil odit, quos quibusdam. Culpa facilis nobis ad?
+        <p className="text-xl">
+          Coming Soon!
         </p>
       </div>
     </>
