@@ -1,4 +1,3 @@
-import { spawn } from "child_process";
 import React, { useState } from "react";
 
 export interface GradientLayout {
@@ -10,10 +9,13 @@ export interface GradientLayout {
 }
 
 const Gradient = (props: { gradient: GradientLayout }) => {
-  const [colors, setColors] = useState(0);
   const [copied, setCopied] = useState(false);
 
   const { gradient } = props;
+
+  if (!gradient) {
+    return null;
+  }
 
   return (
     <div className="flex flex-row pb-16">
@@ -44,20 +46,20 @@ const Gradient = (props: { gradient: GradientLayout }) => {
   );
 };
 
-const Gradients = (props: { gradients: GradientLayout[] }) => {
-  const { gradients } = props;
+// const Gradients = (props: { gradients: GradientLayout[] }) => {
+//   const { gradients } = props;
 
-  if (!gradients) {
-    return null;
-  }
+//   if (!gradients) {
+//     return null;
+//   }
 
-  return (
-    <div className="flex flex-col">
-      {gradients.map((gradient: GradientLayout) => (
-        <Gradient key={gradient.startColor} gradient={gradient} />
-      ))}
-    </div>
-  );
-};
+//   return (
+//     <div className="flex flex-col">
+//       {gradients.map((gradient: GradientLayout) => (
+//         <Gradient key={gradient.startColor} gradient={gradient} />
+//       ))}
+//     </div>
+//   );
+// };
 
 export default Gradient;
