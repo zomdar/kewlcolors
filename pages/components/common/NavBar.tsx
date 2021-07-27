@@ -29,27 +29,7 @@ const NavBar = () => {
                 <a href={navigation[0].href}>
                   <span className="sr-only">kewl colors</span>
                   {/* <h1 className="font-bold text-base md:text-lg">KewColors</h1> */}
-                  <svg
-                    id="logo"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="130"
-                    height="38"
-                    viewBox="0 0 130 38"
-                  >
-                    <text
-                      id="kewlColors"
-                      transform="translate(0 30)"
-                      fill="#fff"
-                      font-size="30"
-                      font-family="CircularStd-Black, Circular Std"
-                      font-weight="800"
-                      letter-spacing="-0.114em"
-                    >
-                      <tspan x="0" y="0">
-                        kewlColors
-                      </tspan>
-                    </text>
-                  </svg>
+                  <img src="/logo.png" alt="" />
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
