@@ -67,8 +67,8 @@ const NavBar = () => {
               </div>
             </div>
 
-            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10 border-b-2 border-t-2 border-purple-500 border-opacity-50">
-              <div className="hidden md:flex items-center justify-start md:flex-1 lg:w-0">
+            <div className="flex justify-between items-center md:justify-start md:space-x-10">
+              <div className="hidden md:flex items-center justify-start md:flex-1 lg:w-0 py-6 border-b-2 border-t-2 border-purple-500 border-opacity-50">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <div
@@ -78,7 +78,7 @@ const NavBar = () => {
                       }
                     >
                       <Link href={item.href} key={item.name}>
-                        <a className="hover:text-purple-900 focused:text-purple-900">
+                        <a className="hover:text-purple-400 focused:text-purple-900">
                           {item.name}
                         </a>
                       </Link>
