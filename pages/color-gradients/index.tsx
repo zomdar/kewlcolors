@@ -91,10 +91,10 @@ export default function Landing() {
   return (
     <>
       <Head>
-        <title>Hi, I'm Wooj</title>
+        <title>Kewl Colors</title>
         <meta
           name="description"
-          content="I like long walks on the beach and my favourite Pokemon is Charizard."
+          content="Kewl Colors for your next project"
         />
       </Head>
       <div className="mx-auto pt-6 flex flex-col px-3 bg-gradient-to-r from-black to-purple-500 text-white">

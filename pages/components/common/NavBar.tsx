@@ -28,7 +28,28 @@ const NavBar = () => {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href={navigation[0].href}>
                   <span className="sr-only">kewl colors</span>
-                  <h1 className="font-bold text-base md:text-lg">KewlColors</h1>
+                  {/* <h1 className="font-bold text-base md:text-lg">KewColors</h1> */}
+                  <svg
+                    id="logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="130"
+                    height="38"
+                    viewBox="0 0 130 38"
+                  >
+                    <text
+                      id="kewlColors"
+                      transform="translate(0 30)"
+                      fill="#fff"
+                      font-size="30"
+                      font-family="CircularStd-Black, Circular Std"
+                      font-weight="800"
+                      letter-spacing="-0.114em"
+                    >
+                      <tspan x="0" y="0">
+                        kewlColors
+                      </tspan>
+                    </text>
+                  </svg>
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
@@ -39,7 +60,10 @@ const NavBar = () => {
               </div>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <div className="flex space-x-4">
-                  <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.zomdar.com%2F&text=Colors%2C%20Fonts%2C%20Palettes%20and%20typography%20for%20Web%20Developers%20and%20Designers.%20By%20%40zomdar">
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.zomdar.com%2F&text=Colors%2C%20Fonts%2C%20Palettes%20and%20typography%20for%20Web%20Developers%20and%20Designers.%20By%20%40zomdar"
+                  >
                     <div className="flex flex-row pl-4">
                       <svg
                         width="20"

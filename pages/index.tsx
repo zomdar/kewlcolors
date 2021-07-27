@@ -10,7 +10,7 @@ export default function Home() {
         <title>Kewl Colors | Color Lib</title>
         <meta
           name="description"
-          content="I like long walks on the beach and my favourite Pokemon is Charizard."
+          content="Kewl Colors | Color Lib"
         />
       </Head>
       <Home />

@@ -1,4 +1,5 @@
-import React from "react";
+import { spawn } from "child_process";
+import React, { useState } from "react";
 
 export interface GradientLayout {
   type: string;
@@ -9,6 +10,9 @@ export interface GradientLayout {
 }
 
 const Gradient = (props: { gradient: GradientLayout }) => {
+  const [colors, setColors] = useState(0);
+  const [copied, setCopied] = useState(false);
+
   const { gradient } = props;
 
   return (
@@ -21,9 +25,20 @@ const Gradient = (props: { gradient: GradientLayout }) => {
         <button
           type="button"
           className={gradient.startColorClass}
-        >
-        </button>
-        <p className="text-md text-gray-400 pt-2">{gradient.startColor} - {gradient.endColor}</p>
+          onClick={() => {
+            setCopied(true);
+            setTimeout(function () {
+              setCopied(false);
+            }, 1000)
+            navigator.clipboard.writeText(
+              gradient.startColor + "-" + gradient.endColor
+            );
+          }}
+        ></button>
+        <p className="text-md text-gray-400 pt-2">
+          {gradient.startColor} - {gradient.endColor}
+        </p>
+        {copied ? <p className="text-xs text-red-500 animate-pulse">Copied!</p> : ""}
       </div>
     </div>
   );
