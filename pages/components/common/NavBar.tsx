@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { WifiIcon, CheckCircleIcon } from "@heroicons/react/solid";
+import { CheckCircleIcon } from "@heroicons/react/solid";
 
 const navigation = [
   { name: "System", href: "/color-system", current: false },
@@ -136,11 +136,11 @@ const NavBar = () => {
                             router.pathname.includes(item.href) ? "active" : ""
                           }
                         >
-                          <Link href={item.href} key={item.name}>
+                          <a href={item.href} key={item.name}>
                             <a className="hover:text-purple-900 focused:text-purple-900">
                               {item.name}
                             </a>
-                          </Link>
+                          </a>
                         </div>
                       ))}
                     </nav>

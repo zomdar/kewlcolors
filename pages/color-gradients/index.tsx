@@ -137,7 +137,7 @@ export default function Landing() {
             {someGradients
               .filter((someGradient) => someGradient.type === "Cold Gradient")
               .map((filteredGradient: GradientLayout) => (
-                <Gradient gradient={filteredGradient}></Gradient>
+                <Gradient key={filteredGradient.startColorClass} gradient={filteredGradient}></Gradient>
               ))}
           </div>
         </div>
