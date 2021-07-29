@@ -14,7 +14,7 @@ export default function Home() {
           content="https://kewlcolors.vercel.app/ "
           key="ogurl"
         />
-        <meta property="og:image" content="/favicon.ico" key="ogimage" />
+        <meta property="og:image" content="../public/favicon.ico" key="ogimage" />
         <meta property="og:site_name" content="Kewl Colors" key="ogsitename" />
         <meta property="og:title" content="Kewl Colors" key="ogtitle" />
         <meta
@@ -24,7 +24,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://kewlcolors.vercel.app/"
+          content="../public/favicon.ico"
         ></meta>
       </Head>
       <Home />
