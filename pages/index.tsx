@@ -9,11 +9,23 @@ export default function Home() {
       <Head>
         <title>Kewl Colors | Color Lib</title>
         <meta name="description" content="Kewl Colors | Color Lib" />
-        <meta property="og:url" content="https://kewlcolors.vercel.app/ " key="ogurl" />
+        <meta
+          property="og:url"
+          content="https://kewlcolors.vercel.app/ "
+          key="ogurl"
+        />
         <meta property="og:image" content="/favicon.ico" key="ogimage" />
         <meta property="og:site_name" content="Kewl Colors" key="ogsitename" />
         <meta property="og:title" content="Kewl Colors" key="ogtitle" />
-        <meta property="og:description" content="Kewl Colors | Color Lib" key="ogdesc" />
+        <meta
+          property="og:description"
+          content="Kewl Colors | Color Lib"
+          key="ogdesc"
+        />
+        <meta
+          name="twitter:image"
+          content="https://kewlcolors.vercel.app/"
+        ></meta>
       </Head>
       <Home />
     </>
