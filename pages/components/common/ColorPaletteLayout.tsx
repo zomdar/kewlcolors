@@ -22,9 +22,9 @@ const ColorPalette = (props: { palette: ColorPaletteLayout }) => {
         <p className="text-l">{palette.type.toLocaleUpperCase()}</p>
         <p className="text-md pt-4">{palette.level}</p>
       </div>
-      <div className="flex flex-wrap pl-14">
+      <div className="flex flex-wrap pl-12">
         {palette.colorCode.map((color) => (
-          <div className="flex flex-col pr-4" key={color}>
+          <div className="flex flex-col px-2" key={color}>
             <button
               type="button"
               className="py-8 px-24 rounded"
