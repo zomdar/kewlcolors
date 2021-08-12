@@ -27,7 +27,7 @@ const ColorPalette = (props: { palette: ColorPaletteLayout }) => {
           <div className="flex flex-col px-2" key={color}>
             <button
               type="button"
-              className="py-8 px-24 rounded"
+              className="py-8 px-24 rounded shadow-lg hover:opacity-75"
               style={{ backgroundColor: color }}
               onClick={() => {
                 setCopied(true);

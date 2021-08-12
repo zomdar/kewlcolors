@@ -11,7 +11,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#F9A8D4",
     endColor: "#A78BFA",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-pink-300 to-purple-400 hover:from-pink-400 hover:to-purple-400 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-pink-300 to-purple-400 hover:from-pink-400 hover:to-purple-400 lg:px-48",
   },
   {
     type: "Cold Gradient",
@@ -19,7 +19,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#6EE7B7",
     endColor: "#7C3AED",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-green-300 to-purple-600 hover:from-green-400 hover:to-purple-700 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-green-300 to-purple-600 hover:from-green-400 hover:to-purple-700 lg:px-48",
   },
   {
     type: "Cold Gradient",
@@ -27,7 +27,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#EF4444",
     endColor: "#DB2777",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-red-500 to-pink-600 hover:from-pink-600 hover:to-yellow-600 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-red-500 to-pink-600 hover:from-pink-600 hover:to-yellow-600 lg:px-48",
   },
   {
     type: "Cold Gradient",
@@ -35,7 +35,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#FCE7F3",
     endColor: "#93C5FD",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-pink-100 to-blue-300 hover:from-pink-200 hover:to-blue-400 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-pink-100 to-blue-300 hover:from-pink-200 hover:to-blue-400 lg:px-48",
   },
   {
     type: "Cold Gradient",
@@ -43,7 +43,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#10B981",
     endColor: "#047857",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 lg:px-48",
   },
   {
     type: "Warm Gradient",
@@ -51,7 +51,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#EC4895",
     endColor: "#F59B0D",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 lg:px-48",
   },
   {
     type: "Warm Gradient",
@@ -59,7 +59,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#C126D0",
     endColor: "#DB2778",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-pink-500 to-purple-800 hover:from-pink-600 hover:to-purple-900 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-pink-500 to-purple-800 hover:from-pink-600 hover:to-purple-900 lg:px-48",
   },
   {
     type: "Warm Gradient",
@@ -67,7 +67,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#FEF3C7",
     endColor: "#60A5FA",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-yellow-100 to-blue-400 hover:from-yellow-200 hover:to-blue-500 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-yellow-100 to-blue-400 hover:from-yellow-200 hover:to-blue-500 lg:px-48",
   },
   {
     type: "Warm Gradient",
@@ -75,7 +75,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#EDE9FE",
     endColor: "#A78BFA",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-purple-100 to-purple-400 hover:from-purple-200 hover:to-purple-500 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-purple-100 to-purple-400 hover:from-purple-200 hover:to-purple-500 lg:px-48",
   },
   {
     type: "Warm Gradient",
@@ -83,7 +83,7 @@ const someGradients: GradientLayout[] = [
     startColor: "#FEE2E2",
     endColor: "#F87171",
     startColorClass:
-      "py-8 px-24 rounded bg-gradient-to-r from-red-100 to-red-400 hover:from-red-200 hover:to-red-500 lg:px-48",
+      "py-8 px-24 rounded shadow-lg bg-gradient-to-r from-red-100 to-red-400 hover:from-red-200 hover:to-red-500 lg:px-48",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Landing() {
           content="Kewl Colors for your next project!"
         />
       </Head>
-      <div className="mx-auto pt-6 flex flex-col px-3 bg-gradient-to-r from-black to-purple-500 text-white">
+      <div className="mx-auto pt-6 flex flex-col px-3 shadow-lg bg-gradient-to-r from-black to-purple-500 text-white">
         <NavBar />
 
         <div
