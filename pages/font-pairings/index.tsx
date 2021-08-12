@@ -3,6 +3,16 @@ import * as React from "react";
 import NavBar from "../components/common/NavBar";
 import Head from "next/head";
 import { TrendingUpIcon, CodeIcon } from "@heroicons/react/solid";
+import FontPairing, {
+  FontPairingLayout,
+} from "../components/common/FontPairingsLayout";
+
+const someFontPairings = [
+  { primary: "IMB Plex Sans", secondary: "Inter" },
+  { primary: "Roboto Condensed", secondary: "Cabin Regular" },
+  { primary: "Roboto", secondary: "Lora" },
+  { primary: "Montserrat", secondary: "Hind Siliguri" },
+];
 
 export default function Landing() {
   return (
@@ -23,7 +33,7 @@ export default function Landing() {
             <div className="flex flex-row">
               <div className="flex flex-row">
                 <TrendingUpIcon className="h-5 w-5 text-gray-500" />
-                <p className="pl-2 text-gray-200">10 Color Gradients</p>
+                <p className="pl-2 text-gray-200">5 Font Pairings</p>
               </div>
               <div className="flex flex-row pl-4">
                 <CodeIcon className="h-5 w-5 text-gray-500" />
@@ -34,7 +44,13 @@ export default function Landing() {
         </div>
       </div>
       <div className="container mx-auto px-4 pt-16">
-        <p className="text-xl">Coming Soon!</p>
+        <p className="text-xl pb-24">Font Pairing</p>
+        {someFontPairings.map((filteredPalette: FontPairingLayout) => (
+          <FontPairing
+            pairing={filteredPalette}
+            key={filteredPalette.primary}
+          ></FontPairing>
+        ))}
       </div>
     </>
   );
